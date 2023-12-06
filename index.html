@@ -63,7 +63,7 @@ p.ex1 {
   <td><a href='#Introduction'>Introduction</td>
 </tr>
 <tr>
-  <td><a href='#Evolution and Feats over time'>Evolution and feats over time</td>
+  <td><a href='#Evolution and Feats over time'>Evolution and Feats over time</td>
 </tr>
 
 <tr>
@@ -77,11 +77,10 @@ p.ex1 {
   </p>
   <p class="ex1">
 <pre>
-This paper presents a novel adaptive active learning strategy.The most accurate classification model from a heterogeneous
-classifier pool is selected at each learning epoch. Our goal is to achieve greater incremental improvement in accuracy,compared
-to using a single type of classification model throughout the process.The strategy is evaluated on benchmark data sets.
-We further consider an application to texture classification problems in sonar mosaic imagery and compare it with non-adaptive
-active learning and traditional machine learning approaches.Our results show that....We conclude that....
+Over the years humans relied on their own instincts and educated beliefs to guide them in the game of chess, one where the best moves have to be made in order to win. But around the last 30 years this was significantly changed after the first chess engines were created.  
+In this article the evolution of such impressive human coded algorithms will be explored, just to see how far this evolutionary step in artificial intelligence research has come. 
+From the very beginnings where chess engines went from being on the same or similar level as the best human chess players in the world at the time to reaching abilities nowadays that are far superior to the best chess players in the world.  
+Demonstrating the advanced creative ideas one modern engine could make nowadays and distinguishing how the engines of today and the past all differ from each other and how they were coded to operate the way they do.
   </pre>
   <p>
 
@@ -92,20 +91,10 @@ active learning and traditional machine learning approaches.Our results show tha
      <h3 id="Introduction">Introduction</h3>
      <p class="ex1">
        <pre>
-Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an
-intelligent machine through the interaction of an oracle with the machine system, over a sequence of
-learning epochs. A distinctive component in an active system is the querying strategy, used to sample
-candidate training instances from a pool and evaluate them for informativeness, i.e., their potential
-to improve the classification model. Various strategies have been proposed including; Query by
-Committee (Seung et al., 1992), Monte Carlo estimation (Roy and McCallum, 2001), uncertainty
-sampling (Lewis and Gale, 1994) and version space reduction (margin sampling) (Tong and Koller,
-2001). Irrespective of how the most informative pattern instances are chosen at each epoch they are
-presented for labeling, to a machine (database) or human oracle that has knowledge of the class
-labels. After adding the newly labeled instances to the current training set, a revised model is
-subsequently induced. A goal of this process is to achieve an efficient, incremental advancement of
-learning at each epoch. The process is continued until some stopping criterion has been met, such as
-reaching a stage where information from the selected instances is contrary to the model, causing the
-classifier confidence to drop, as in Vlachos (2008).”
+To win in the game of chess, one must make as many of the best moves as they can think of and play to topple the opponent. 
+One way chess players have been more able to do so over time is through using chess engines which are online coded algorithms which evaluate any chess position which give you the best moves in a given position (Rozman, 2022).
+Prior to chess engines existing chess mastery was described by AI researcher Lex Fridman as ‘’the peak of man’s intellectual capabilities (Fridman, 2019)’’ 
+but after the match between at the time highest ever rated world champion Garry Kasparov and engine Deep blue this was described as the breakthrough for AI in the chess world (Fridman, 2019) .
 
        </pre>
 
@@ -144,21 +133,65 @@ classifier confidence to drop, as in Vlachos (2008).”
         </tr>
      </table>
 
+     <hr>
+     <h3 id='Evolution and Feats over time'>Evolution and Feats over time</h3>
+     <p class='ex1'>
+       <pre>
+Figure 1 demonstrates the very first-time man was defeated by a chess engine machine but ever since chess engines have only advanced far beyond the capabilities of all humans in chess. 
+In 1997 the at the time latest developed by Demis Hassabis’ Deep Mind chess engine, namely Deep Blue was paired up against Garry Kasparov in a 6-game match up where Deep Blue defeated world champion Kasparov by 3.5 games to 2.5 
+which Hassabis (2017) described as “a watershed for AI and an extraordinary technical feat”. Kasparov described the breakthrough AI chess experience as very painful since it was the first match up, he lost period (Fridman, 2019). 
+But despite this loss the world champion at the time Garry Kasparov recognised this arise of chess engines as an opportunity to promote the game of chess and to utilise them to evolve his game since chess grandmasters can play chess 
+by combining experience with their intuition backed by the chess engines since engines contain a massive data base of opening moves and operate on brute calculation according to Kasparov (2008, p216). 
+From that point onwards chess engines have only gotten even stronger over time till the points that no grandmaster at the top of the chess pyramid could ever match the engines chess abilities. 
+The most recent chess engines to have come out which are recognised as the most prolific and powerful are namely Stockfish and Deep Mind’s AlphaZero with each with a respected rating of 3378 and around 3430 (Chess.stackexchange, 2018) 
+which is absolutely 100s of rating higher than the peak rating achieved by a human chess player namely Magnus Carlsen’s 2882(FIDE, 2023).
+
+When engines evaluate positions, they come up with plans that span across a few moves of what they evaluate as the best moves in each position considering all the chess pieces’ placement (Rozman, 2022 ).
+But the question here arises of how creative can some of these chess move combinations be? In fact there is no real limit of the creative possibilities given that according to Tromp (Tromp,2023) there are approximately 4.82 x 10^44 legal chess positions. 
+In fact, in the 2017 TCEC championship event in one of the games where AlphaZero was paired against Stockfish, the AlphaZero engine managed to achieve a position of such where Stockfish’s queen got trapped in the corner of the board, 
+basically limiting the queen’s usefulness at a significant level. It achieved such a position following the sacrifice of eventually 2 pawns and a rook for a bishop, which is normally a game winning advantage but, in this case, 
+there is sufficient compensation clearly in the position which ultimately won the game for AlphaZero (Levy Rozman, 2021). 
+
+But one thing that is made clear is that these chess engines do differ to each other, for example AlphaZero uses an AI technique known as convolutional neural networking to learn and evaluate chess which basically means AlphaZero learned and 
+developed its chess abilities through playing lots of games against itself and gradually learning what moves to make in each position in order to get the best winning chances based of millions of games the engine has played against itself (Barlow, 2023) . 
+Whereas Stockfish utilises a technique known as alpha beta search which is a coded algorithm where it searches through the whole game tree and every possible move combination a player and its opposition can make legally in each position and 
+after it evaluates each position and set of move combinations the engine will give a score for each possible tree branch of its likelihood of winning the game. This score is determined by the minimax algorithm which is a coded one 
+where it assumes the chess opponent will make the best move in each possible given position in its respected tree branch of possibility (Chessprogramming wiki, 2021). 
+Comparing AlphaZero for example with IBM’s deep blue developed back in 1997 is like comparing apples and pairs given that deep blue relied on deep chess move calculations based on its in programmed knowledge of chess 
+which is based on man’s knowledge of chess openings back then whereas AlphaZero thrived on its creative capability which it learns from playing against itself (Amphy Blog, 2021).
 
 
+       </pre>
 <h3 id="References">References</h3>
 
 <p>
   <pre>
-Angluin, D (1988),Queries and concept learning. Machine learning 2, (4), 319-342.
+AMPHY Blog (2023) The Rise of Chess AI: From Deep Blue to AlphaZero. Available at: https://blog.amphy.com/deep-blue-alphazero/ | Amphy Blog (Accessed: 30 November 2023).
 
-Brinker, K (2003) Incorporating Diversity in Active learning with Support Vector machines,
-Proceeedings of the Twentieth International Conference on Machine Learning (ICML-2003)
+Barlow, D. (2023) AlphaZero shocks chess world with victory over Stockfish 8. Available at: https://ocfchess.org/alphazero-vs-stockfish/ - OCF Chess Accessed: 29/11/2023).
+   
+Chess Programming WIKI (2021) Alpha-Beta. Available at: https://www.chessprogramming.org/Alpha-Beta(Accessed: 30 November 2023).
 
-Bruzzone, L,Chi, M and Marconcini, M (2006), A nove; transductive SVM for semisupervised classification of remote sensing images,
-IEEE Transactions on Geoscience and Remote sensing,44, (11), 3363.
-   
-   
+FIDE (2023) International Chess Federation. Available at: https://ratings.fide.com/profile/1503014 (Accessed: 01 December 2023).
+
+(Fridman, L.(2019) Garry Kasparov: Chess, Deep Blue, AI & Putin [Lex Fridman Podcast]. Oct 2019. 
+Available at: Garry Kasparov: Chess, Deep Blue, AI, and Putin | Lex Fridman Podcast #46 - YouTube (accessed on 25/10/2023))
+
+GothamChess (2021) How AlphaZero Completely CRUSHED Stockfish. 13 May. Available at: https://www.youtube.com/watch?v=8dT6CR9_6l4&t=145s - YouTube (Accessed: 22 November 2023).
+
+Honda, S. (1997). Grandmaster Garry Kasparov in the last of six games against deep blue in 1997; the computer won the match by 3.5 games to 2.5. 
+Available at: https://media.springernature.com/w300/springer-static/image/art%3A10.1038%2F544413a/MediaObjects/41586_2017_Article_BF544413a_Figa_HTML.jpg?as=webp (accessed on 26/10/2023).
+
+Hassabis, M. 2017 ‘Artificial Intelligence: Chess match of the century’, Nature, 544, https://doi.org/10.1038/544413a, pp 413-414).
+
+Kasparov, G. (2008) How Life Imitates Chess. 2021 edition. Great Britain: Penguin Books.
+
+(Rozman, L.(2022) Gothamchess: Hans Niemann, Magnus Carlsen, chess cheating scandal & chess bots [Lex Fridman Podcast]. Oct 2022. 
+Available at: https://www.youtube.com/watch?v=iSMpTmibeDw&t=5184s | Lex Fridman Podcast #327 - YouTube (accessed on 25/10/2023) )
+
+Tromp, J. (2023) Chess Position Ranking. 
+Available at: tromp/ChessPositionRanking: https://github.com/tromp/ChessPositionRanking (github.com) (Accessed: 29 November 2023).
+
   </pre>
 </p>
 </html>
